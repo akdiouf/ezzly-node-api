@@ -123,7 +123,7 @@ The AWS SAM CLI installs dependencies that are defined in `package.json`, create
 Run functions locally and invoke them with the `sam local invoke` command.
 
 ```bash
-my-application$ sam local invoke helloFromLambdaFunction --no-event
+my-application$ sam local invoke eezlygrocery --no-event
 ```
 
 ## Unit tests
