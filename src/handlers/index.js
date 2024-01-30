@@ -20,7 +20,7 @@ const db_modules_1 = require("./modules/db.modules");
 const bodyParser = require('body-parser');
 const { DBDateFormat, RandomNumber, CheckPermission, SelectQuery, Pagination } = require('./lib/common');
 /* Routes */
-const AuthRoutes = require('./routes/auth');
+const AuthRoutes = require('./src/handlers/routes/auth');
 const UserRoutes = require('./routes/user');
 const EezlyAisles = require('./routes/eezly/aisles');
 const EezlyItems = require('./routes/eezly/items');
