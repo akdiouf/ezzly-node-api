@@ -59,8 +59,8 @@ app.get("/public/files/:file", (req: Request, res: Response): void => {
 
 // ONLINE SERVER
 const server = https.createServer({
-    key: fs.readFileSync("/etc/letsencrypt/live/" + process.env.DOMAIN + "/privkey.pem", "utf8"),
-    cert: fs.readFileSync("/etc/letsencrypt/live/" + process.env.DOMAIN + "/fullchain.pem", "utf8"),
+    // key: fs.readFileSync("/etc/letsencrypt/live/" + process.env.DOMAIN + "/privkey.pem", "utf8"),
+    // cert: fs.readFileSync("/etc/letsencrypt/live/" + process.env.DOMAIN + "/fullchain.pem", "utf8"),
 }, app);
 
 
