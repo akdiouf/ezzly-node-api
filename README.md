@@ -117,7 +117,7 @@ Build your application with the `sam build` command.
 ```bash
 my-application$ sam build -m package.json
 ```
-
+#comment
 The AWS SAM CLI installs dependencies that are defined in `package.json`, creates a deployment package, and saves its contents in the `.aws-sam/build` folder.
 
 Run functions locally and invoke them with the `sam local invoke` command.
