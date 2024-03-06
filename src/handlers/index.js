@@ -53,7 +53,7 @@ app.use("/favorite", Favorite);
 app.use('/dashboard/config', Dashboard);
 app.use(cors());
 app.get("/", (req, res) => {
-    res.send("Hello  We are in EEZLY_GROCERY SHOPPING TODAY!!!");
+    res.send("Hello  We are in EEZLY_GROCERY SHOPPING TODAY FOR THE BEST DEP!!!");
 });
 app.get("/public/files/:file", (req, res) => {
     res.sendFile(path.resolve("./") + '/public/files/' + req.params.file);
