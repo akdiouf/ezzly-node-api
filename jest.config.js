@@ -13,7 +13,7 @@ module.exports = {
     ],
   },
   moduleFileExtensions: ["ts", "tsx", "js", "jsx"],
-  rootDir: "./__tests__/unit/handlers",
+  rootDir: "./tests",
   collectCoverage: true,
   clearMocks: true,
   // coverageDirectory: "coverage",

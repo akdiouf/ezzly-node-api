@@ -1,0 +1,32 @@
+version: 0.0
+os: linux
+
+files:
+  - source: /
+    destination: /var/www/html/eezly-grocery-nodeJS-api
+      #    overwrite: true
+      #file_exists_behavior: OVERWRITE
+
+hooks:
+  BeforeInstall:
+    - location: scripts/cicd_install.sh
+      timeout: 900
+      runas: root
+    - location: scripts/copy_env.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: scripts/npm_install.sh
+      timeout: 900
+      runas: root
+    - location: scripts/restart_pm2.sh
+      timeout: 900
+      runas: root
+
+  ApplicationStart:
+    - location: scripts/set_permissions.sh
+      timeout: 300
+      runas: root
+    - location: scripts/restart_pm2.sh
+      timeout: 900
+      runas: root
